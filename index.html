@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Frijole&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
 
     <title>Secret-tNumber❓</title>
   </head>
@@ -19,7 +18,7 @@
     <header class="header-principal">
       <di class="box">?</di>
       <h1 class="tittle">Guess my number!</h1>
-      <h2 class="score">Attemps 50 👍</h2>
+      <h2 class="score">Between 0 and 50 👍</h2>
       <h2 class="highscore">Highscore: 0 🏦</h2>
     </header>
     <section>
@@ -48,35 +47,25 @@
         <section class="center">
           <div class="up">
             <div class="secret">?</div>
-            <button class="btn">Again!</button>
+            <button class="btn again">Again!</button>
           </div>
           <div class="middle">
             <h2 class="show-message">Let's start! 🤩</h2>
           </div>
           <div class="down">
             <input type="number" class="input" />
-            <button class="btn">Push!</button>
+            <button class="btn push">Push!</button>
           </div>
         </section>
         <section class="right">
-          <div class="color">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
-              />
-            </svg>
+          <div>
+            <p class="attempts">
+              Attempts 💰<span class="numberOportunity">10 </span>
+            </p>
           </div>
         </section>
       </div>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>

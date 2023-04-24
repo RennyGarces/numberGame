@@ -8,7 +8,7 @@ html {
   font-family: "Frijole", cursive;
 }
 body {
-  background-color: #f17575;
+  background-color: #9f82f8;
   color: aliceblue;
 }
 
@@ -17,7 +17,7 @@ body {
   justify-content: center;
   background-color: #504b4b;
   font-size: 2.3rem;
-  border-bottom: 5px solid rgb(255, 255, 255);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +42,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-.show-message {
+.show-message,
+.attempts {
+  margin: 5rem;
   text-align: center;
   font-size: 5rem;
   color: #2e313a;
@@ -59,7 +61,7 @@ body {
   border: 5px solid rgb(65, 62, 62);
   background-color: #504b4b;
 
-  color: #f17575;
+  color: #5c7cfa;
   font-size: 15rem;
   font-family: inherit;
   display: block;
@@ -84,15 +86,15 @@ body {
   font-size: 15rem;
   width: 27rem;
   background-color: #504b4b;
-  color: #f17575;
+  color: #ffe600;
 }
 .progress {
-  border: 5px solid #f17575;
+  border: 1px solid #ffffff;
   display: inline-block;
   background-color: #504b4b;
   font-size: 1rem;
   color: #504b4b;
-  width: 10%;
+  width: 100%;
 }
 .left {
   display: flex;
