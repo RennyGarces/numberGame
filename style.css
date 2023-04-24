@@ -9,18 +9,19 @@ html {
 }
 body {
   background-color: #9f82f8;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
 }
 
 .header-principal {
   text-align: center;
   justify-content: center;
-  background-color: #504b4b;
+  background-image: url(img/_843784bc-dff0-4828-8c80-36bb29f2d443.jpeg);
   font-size: 2.3rem;
-
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-shadow: rgb(179, 178, 178) 1px 1px;
 }
 .box,
 .secret {
@@ -43,7 +44,8 @@ body {
   justify-content: center;
 }
 .show-message,
-.attempts {
+.attempts,
+.highscore {
   margin: 5rem;
   text-align: center;
   font-size: 5rem;
@@ -83,6 +85,7 @@ body {
   background-color: #636363;
 }
 .secret {
+  margin-top: 2rem;
   font-size: 15rem;
   width: 27rem;
   background-color: #504b4b;
@@ -97,17 +100,45 @@ body {
   width: 100%;
 }
 .left {
-  display: flex;
-  align-items: end;
-  justify-content: end;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.right {
+.right,
+.left {
   display: flex;
   align-items: start;
   margin-top: 20rem;
 }
 
 .icon {
+  align-self: end;
   width: 15rem;
   color: #393737;
+}
+
+@media (max-width: 72em) {
+  html {
+    font-size: 52.6%;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "a" "b" "c";
+  }
+  .show-message,
+  .attempts,
+  .highscore {
+    margin: 2rem;
+  }
+  .left,
+  .right {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .center {
+    grid-area: c;
+  }
+  .icon {
+    display: none;
+  }
 }

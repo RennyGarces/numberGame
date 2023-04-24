@@ -19,7 +19,6 @@
       <di class="box">?</di>
       <h1 class="tittle">Guess my number!</h1>
       <h2 class="score">Between 0 and 50 👍</h2>
-      <h2 class="highscore">Highscore: 0 🏦</h2>
     </header>
     <section>
       <div class="progress">''</div>
@@ -27,22 +26,21 @@
     <main>
       <div class="container">
         <section class="left">
-          <div class="color">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-              />
-            </svg>
+          <div>
+            <p class="highscore">Highscore: 🏦</p>
           </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+              clip-rule="evenodd"
+            />
+          </svg>
         </section>
         <section class="center">
           <div class="up">
@@ -53,7 +51,7 @@
             <h2 class="show-message">Let's start! 🤩</h2>
           </div>
           <div class="down">
-            <input type="number" class="input" />
+            <input type="number" aria-label="input" class="input" />
             <button class="btn push">Push!</button>
           </div>
         </section>
