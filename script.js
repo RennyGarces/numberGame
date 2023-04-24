@@ -33,6 +33,7 @@ document.querySelector(".again").addEventListener("click", function () {
 
 document.querySelector(".push").addEventListener("click", function () {
   const guess = Number(document.querySelector(".input").value);
+  modifyInput(".input", "");
 
   if (!guess || guess < 0) {
     modifyPage(".show-message", "Invalid Number 👎");
