@@ -152,6 +152,11 @@ body {
   html {
     font-size: 42.6%;
   }
+  .input {
+    font-size: 10rem;
+
+    height: 20rem;
+  }
 }
 
 @media (max-width: 46em) {
