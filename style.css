@@ -5,7 +5,8 @@
 }
 html {
   font-size: 62.5%;
-  font-family: "Frijole", cursive;
+
+  font-family: "Press Start 2P", cursive;
   text-shadow: rgb(179, 178, 178) 2px 2px;
 }
 body {
@@ -24,6 +25,7 @@ body {
   align-items: center;
 }
 .box {
+  margin-left: 1rem;
   width: 10rem;
 }
 .secret {
@@ -145,8 +147,15 @@ body {
     display: none;
   }
 }
-@media (max-width: 50em) {
+
+@media (max-width: 62em) {
   html {
     font-size: 42.6%;
+  }
+}
+
+@media (max-width: 46em) {
+  html {
+    font-size: 22.6%;
   }
 }
