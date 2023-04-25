@@ -39,9 +39,7 @@ document.querySelector(".push").addEventListener("click", function () {
     modifyPage(".show-message", "Invalid Number 👎");
   } else if (guess === secretNumber) {
     highscore.push(opportunities);
-
     scoreUser = calculateSum(highscore);
-
     modifyInput(".input", "");
     modifyPage(".attempts", "I'm proud of you! 🙂");
     modifyPage(".show-message", "You're the winner!🏆 🥳");

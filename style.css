@@ -15,8 +15,6 @@ body {
 }
 
 .header-principal {
-  text-align: center;
-  justify-content: center;
   background-image: url(img/_843784bc-dff0-4828-8c80-36bb29f2d443.jpeg);
   font-size: 2.3rem;
   background-size: cover;
@@ -25,7 +23,6 @@ body {
   align-items: center;
 }
 .box {
-  margin-left: 1rem;
   width: 10rem;
 }
 .secret {
@@ -123,7 +120,7 @@ body {
 
 @media (max-width: 72em) {
   html {
-    font-size: 52.6%;
+    font-size: 42.6%;
   }
   .container {
     grid-template-columns: 1fr;
@@ -148,9 +145,15 @@ body {
   }
 }
 
-@media (max-width: 62em) {
+@media (max-width: 90em) {
   html {
     font-size: 42.6%;
+  }
+}
+
+@media (max-width: 62em) {
+  html {
+    font-size: 32.6%;
   }
   .input {
     font-size: 10rem;
